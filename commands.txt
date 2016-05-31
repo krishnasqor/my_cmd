@@ -941,3 +941,12 @@ https://www.digitalocean.com/community/tutorials/how-to-install-a-mean-js-stack-
 
 https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
 http://adrianmejia.com/blog/2014/10/01/creating-a-restful-api-tutorial-with-nodejs-and-mongodb/
+
+
+
+===================trailing spaces
+
+remove_trailing_whitespaces.sh
+
+perl -pi -e 's/[ \t]+$//' $@   
+
