@@ -143,8 +143,12 @@ matches_regex(Str, Regex) ->
     end.
 
 
-
-
+dis(A) ->
+    io:format("~nArg1===> ~p~n~n", [A]).
+dis(A, B) ->
+    io:format("~nArg1===> ~p~nArg2===> ~p~n", [A, B]).
+dis(A, B, C) ->
+    io:format("~nArg1===> ~p~nArg2===> ~p~nArg3===> ~p~n", [A, B, C]).
 
 
 
