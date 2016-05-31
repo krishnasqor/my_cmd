@@ -378,6 +378,10 @@ git push origin PE-2601
 make a pull request
 
 
+to get all branches to local
+git fetch --all
+
+
 ========== revert commit undo commit
 
 Undo a commit and redo
