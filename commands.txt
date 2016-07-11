@@ -1000,3 +1000,16 @@ sudo apt-get install postgresql postgresql-contrib
 =====
 
 
+
+
+### upgrade npm
+  sudo npm -g install npm@latest
+
+
+### upgrade nodejs to v4.2.6
+
+  https://davidwalsh.name/upgrade-nodejs
+  sudo npm cache clean -f
+  sudo npm install -g n
+  sudo n v4.2.6
+
