@@ -129,6 +129,7 @@ eunit:test(my_module).
 ./kerl list builds   
 ./kerl install erl_17.5 /home/raju/Documents/SQ2/SQ2_Notify/
 ./kerl install erl_17.5 /home/raju/Documents/sqor/sqor_rank/
+. /home/raju/erl_builds/erl_installations/activate
 . /home/raju/Documents/sqor/por_mtq/activate     --- opens ur shell with 17.5 version
 . /home/raju/Documents/sqor/sqor_rank/activate
 
