@@ -978,3 +978,25 @@ remove_trailing_whitespaces.sh
 
 perl -pi -e 's/[ \t]+$//' $@   
 
+
+#################### phoenix elixir
+
+https://pikender.github.io/elixir/elixir-setup/
+http://www.phoenixframework.org/docs/installation
+
+
+####################### postgres
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04
+
+=== installation
+sudo apt-get update
+sudo apt-get install postgresql postgresql-contrib
+===== postgres users
+- sudo -i -u postgres
+- go to postgres shell by typing 'psql' command
+- change the password to 'postgres'  by entering the below command 
+      ALTER USER postgres PASSWORD 'postgres';  
+=====
+
+
