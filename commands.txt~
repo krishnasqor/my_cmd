@@ -443,17 +443,6 @@ $ git merge upstream/master master
 git ssh
 https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
 
-
-########### generate   ssh key github 
-
-ssh-keygen -t rsa -b 4096 -C "raju.chittimallea@gmail.com"
-vi ~/.ssh/id_rsa.pub
-copy ssh key and update in github
-
-
-
-
-
 ########################### self hosted remote-git-repo github
 https://www.kennwilson.com/notes/2013/08/self-hosted-remote-git-repositories/
 https://www.youtube.com/watch?v=j1oFazXrzN4
