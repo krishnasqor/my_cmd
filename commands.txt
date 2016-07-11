@@ -411,7 +411,7 @@ git fetch --all
 Undo a commit and redo
 
 $ git commit -m "Something terribly misguided"              (1)
-$ git reset --soft HEAD~                                    (2)
+$ git reset --soft Head                                   (2)
 << edit files as necessary >>                               (3)
 $ git add ...                                               (4)
 $ git commit -c ORIG_HEAD  
@@ -978,3 +978,30 @@ remove_trailing_whitespaces.sh
 
 perl -pi -e 's/[ \t]+$//' $@   
 
+
+
+
+###### erlang actor model 
+
+Actor concurrency
+
+So what's the alternative? The actor model of concurrency has recently gained prominence, largely thanks to some success achieved by its flagship language, Erlang.
+
+The actor model consists of a few key principles:
+
+No shared state
+Lightweight processes
+Asynchronous message-passing
+Mailboxes to buffer incoming messages
+Mailbox processing with pattern matching
+Let's look at these principles in more detail. An actor is a process that executes a function. Here a process is a lightweight user-space thread (not to be confused with a typical heavyweight operating-system process). Actors never share state and thus never need to compete for locks for access to shared data. Instead, actors share data by sending messages that are immutable. Immutable data cannot be modified, so reads do not require a lock.
+
+Messages are sent asynchronously and are buffered in an actor's mailbox. A mailbox is essentially a queue with multiple producers (other actors) and a single consumer. A particular actor is driven by receiving messages from the mailbox based on pattern matching.
+
+Some key assumptions are built into this model:
+
+Processes are cheap (in memory) and fast to create
+Processes are small and thus large numbers of processes can be created
+Processes are not bound to kernel threads and can be efficiently scheduled in user space
+The scheduler requires the ability to pause and continue process execution
+Messages can be retrieved by efficiently pattern-matching messages in the mailbox
