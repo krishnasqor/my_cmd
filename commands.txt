@@ -129,6 +129,7 @@ eunit:test(my_module).
 ./kerl list builds   
 ./kerl install erl_17.5 /home/raju/Documents/SQ2/SQ2_Notify/
 ./kerl install erl_17.5 /home/raju/Documents/sqor/sqor_rank/
+. /home/raju/erl_builds/erl_installations/activate
 . /home/raju/Documents/sqor/por_mtq/activate     --- opens ur shell with 17.5 version
 . /home/raju/Documents/sqor/sqor_rank/activate
 
@@ -596,7 +597,8 @@ example json output
 curl http://api.sqor.com/entities/226601 |ppjc
 
 
-
+######333 restart bash
+. ~/.bashrc
 
 ######################### to access the paths of release
 code:priv_dir(phone_text).
@@ -990,6 +992,7 @@ remove_trailing_whitespaces.sh
 perl -pi -e 's/[ \t]+$//' $@   
 
 
+<<<<<<< HEAD
 
 
 ###### erlang actor model 
@@ -1016,3 +1019,39 @@ Processes are small and thus large numbers of processes can be created
 Processes are not bound to kernel threads and can be efficiently scheduled in user space
 The scheduler requires the ability to pause and continue process execution
 Messages can be retrieved by efficiently pattern-matching messages in the mailbox
+=======
+#################### phoenix elixir
+
+https://pikender.github.io/elixir/elixir-setup/
+http://www.phoenixframework.org/docs/installation
+
+
+####################### postgres
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04
+
+=== installation
+sudo apt-get update
+sudo apt-get install postgresql postgresql-contrib
+===== postgres users
+- sudo -i -u postgres
+- go to postgres shell by typing 'psql' command
+- change the password to 'postgres'  by entering the below command 
+      ALTER USER postgres PASSWORD 'postgres';  
+=====
+
+
+
+
+### upgrade npm
+  sudo npm -g install npm@latest
+
+
+### upgrade nodejs to v4.2.6
+
+  https://davidwalsh.name/upgrade-nodejs
+  sudo npm cache clean -f
+  sudo npm install -g n
+  sudo n v4.2.6
+
+>>>>>>> addb562cb73f7555a2f64f6944010225c65e9690
