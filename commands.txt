@@ -1055,3 +1055,53 @@ sudo apt-get install postgresql postgresql-contrib
   sudo n v4.2.6
 
 >>>>>>> addb562cb73f7555a2f64f6944010225c65e9690
+
+
+
+################# postgres
+
+sudo -i -u postgres   for postgres user
+postgres@raju:~$ psql -d game_center_dev   to get into certain database
+game_center_dev=# \d events;   // to see events table
+ctrl+d to exit
+
+https://chartio.com/resources/tutorials/how-to-list-databases-and-tables-in-postgresql-using-psql
+1) mix ecto.drop
+2) mix ecto.gen.migration create_events   // create a event
+  edit the file with the required schema and fields in the change function
+3) mix ecto.create && mix ecto.migrate
+4) iex -S mix phoenix.server
+
+
+=================commands
+
+PostgreSQL is one of the best database engines for an average web project and many who moves to psql from mysql (for example) often ask the following questions: what  is the analog of “show tables” in postgres? or how can I get the list of databases in postgres like “show databases” in mysql? The answers are short:
+
+https://chartio.com/resources/tutorials/how-to-list-databases-and-tables-in-postgresql-using-psql
+
+postgres=# \l
+to list all the users
+
+postgres=# \c sales  
+to switch the databases
+
+sales=# \dt
+list the tables in the db
+
+mysql: SHOW TABLES
+postgresql: \d
+postgresql: SELECT table_name FROM information_schema.tables WHERE table_schema = 'public';
+
+mysql: SHOW DATABASES
+postgresql: \l
+postgresql: SELECT datname FROM pg_database;
+
+mysql: SHOW COLUMNS
+postgresql: \d table
+postgresql: SELECT column_name FROM information_schema.columns WHERE table_name ='table';
+
+mysql: DESCRIBE TABLE
+postgresql: \d+ table
+postgresql: SELECT column_name FROM information_schema.columns WHERE table_name ='table';
+
+
