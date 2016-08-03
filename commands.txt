@@ -407,6 +407,13 @@ to get all branches to local
 git fetch --all
 
 
+========== git pull forcefully 
+rewrites all your local worked files
+branch can be dev/ master
+
+git fetch origin
+git reset --hard origin/dev
+
 ========== revert commit undo commit
 
 Undo a commit and redo
