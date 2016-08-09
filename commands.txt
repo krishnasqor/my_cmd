@@ -22,6 +22,9 @@ Reference: https://www.erlang-solutions.com/resources/download.html
 
 
 
+######################## sticky notes
+sudo apt-get install xpad
+
 
 ################################### erl make and run commands
 erl -pa ebin/ deps/*/ebin/     -> erll
@@ -1089,6 +1092,13 @@ https://chartio.com/resources/tutorials/how-to-list-databases-and-tables-in-post
 PostgreSQL is one of the best database engines for an average web project and many who moves to psql from mysql (for example) often ask the following questions: what  is the analog of “show tables” in postgres? or how can I get the list of databases in postgres like “show databases” in mysql? The answers are short:
 
 https://chartio.com/resources/tutorials/how-to-list-databases-and-tables-in-postgresql-using-psql
+
+
+
+sudo -i -u postgres   for postgres user
+postgres@raju:~$ psql -d game_center_dev   to get into certain database
+game_center_dev=# \d events;   // to see events table
+ctrl+d to exit
 
 postgres=# \l
 to list all the users
