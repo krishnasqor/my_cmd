@@ -466,6 +466,11 @@ vi ~/.ssh/id_rsa.pub
 copy ssh key and update in github
 
 
+############ git restore deleted files
+
+git ls-files -d | xargs git checkout --
+
+
 
 
 
