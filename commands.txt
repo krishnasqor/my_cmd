@@ -126,6 +126,16 @@ store_mtq_test() ->
 run test in shell
 eunit:test(my_module).
 
+
+################### ubuntu
+
+
+set root password | ubuntu password | reset password
+sudo passwd root
+
+
+
+
 ################### kerl builds and releases
 gti clone kerl library
 ./kerl list releases
@@ -376,6 +386,15 @@ git remote add origin https://github.com/RajuC/phone_text-erlang-cowboy.git
 
 
 git clone https://github.com/RajuC/SQ2_Image.git   --- to copy a image from git repo
+
+
+
+Git adding user | git init | git initial setup
+
+git config --global user.name "RajuC"
+git config --global user.email "raju.chittimallea@gmail.com"
+
+
 
 
 
@@ -992,15 +1011,27 @@ You also need to have ssh-server installed on Ubuntu machine:
 sudo apt-get install openssh-server
 That should work: scp file host:/some/directory
 
+scp ubuntu/* raju@192.168.1.109:/home/raju/Desktop/ubuntu/
+
+scp mac/files(Src) ubuntu_system(Dest)
+
 
 
 
 ================================= mean stack
 
+
+install nodejs | install npm | install node
+
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
 https://www.digitalocean.com/community/tutorials/how-to-install-a-mean-js-stack-on-an-ubuntu-14-04-server
 
 https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
 http://adrianmejia.com/blog/2014/10/01/creating-a-restful-api-tutorial-with-nodejs-and-mongodb/
+
+
 
 
 
