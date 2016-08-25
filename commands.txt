@@ -1115,6 +1115,8 @@ postgres@raju:~$ psql -d game_center_dev   to get into certain database
 game_center_dev=# \d events;   // to see events table
 ctrl+d to exit
 
+
+################ Ecto migration 
 https://chartio.com/resources/tutorials/how-to-list-databases-and-tables-in-postgresql-using-psql
 1) mix ecto.drop
 2) mix ecto.gen.migration create_events   // create a event
