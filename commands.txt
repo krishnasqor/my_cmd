@@ -22,6 +22,17 @@ Reference: https://www.erlang-solutions.com/resources/download.html
 
 
 
+################# gnome metacity compiz flashback
+
+sudo apt-get update; sudo apt-get install gnome-session-fallback
+
+---- menu applet with search
+
+sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo apt-get update
+sudo apt-get install cardapio cardapio-gnomepanel
+
+
 ######################## sticky notes
 sudo apt-get install xpad
 
