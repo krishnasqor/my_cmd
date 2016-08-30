@@ -1,24 +1,11 @@
-############# update erlang
 
-Add one of the following to the /etc/apt/sources.list file:
+############### virtual box ubuntu vms
 
-deb http://packages.erlang-solutions.com/ubuntu trusty contrib
-deb http://packages.erlang-solutions.com/ubuntu saucy contrib
-deb http://packages.erlang-solutions.com/ubuntu precise contrib 
+http://www.osboxes.org/ubuntu/
 
-Determine which one to add according to the result of running the following in the console:
+64 bit 14.04 LTS
 
-------   lsb_release -c 
-Run the following two commands, after successfully updating the /etc/apt/sources.list file:
-
------- wget http://packages.erlang-solutions.com/ubuntu/erlang_solutions.asc
------- sudo apt-key add erlang_solutions.asc
-Then run the following:
-
------ sudo apt-get update
------ sudo apt-get install erlang
-
-Reference: https://www.erlang-solutions.com/resources/download.html
+https://drive.google.com/file/d/0B_HAFnYs6Ur-M0JSeE1BVWtEQ2c/view
 
 
 
