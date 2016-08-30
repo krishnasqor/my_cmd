@@ -127,9 +127,26 @@ eunit:test(my_module).
 
 ################### ubuntu
 
+############# ubuntu password login
+How do I get Ubuntu to ask me for a password at login again?
+
+`sudo gpasswd -d username nopasswdlogin`
+
+
+####### remove ubuntu user  
+`sudo deluser --remove-home username`
+
+
+######## change ubuntu user and root password
+
+change root password
+ `sudo passwd`
+
+change current user password
+ `passwd`
 
 set root password | ubuntu password | reset password
-sudo passwd root
+`sudo passwd root`
 
 
 
@@ -387,10 +404,7 @@ git clone https://github.com/RajuC/SQ2_Image.git   --- to copy a image from git 
 
 
 
-Git adding user | git init | git initial setup
 
-git config --global user.name "RajuC"
-git config --global user.email "raju.chittimallea@gmail.com"
 
 
 
@@ -477,6 +491,11 @@ https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
 
 
 ########### generate   ssh key github 
+
+Git adding user | git init | git initial setup
+
+git config --global user.name "RajuC"
+git config --global user.email "raju.chittimallea@gmail.com"
 
 ssh-keygen -t rsa -b 4096 -C "raju.chittimallea@gmail.com"
 vi ~/.ssh/id_rsa.pub
