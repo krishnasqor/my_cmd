@@ -1035,7 +1035,35 @@ scp mac/files(Src) ubuntu_system(Dest)
 
 
 
+##############  install phoenix / install elixir 
+
+https://pikender.github.io/elixir/elixir-setup/
+
+Install Elixir
+
+1  wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
+1' sudo dpkg -i erlang-solutions_1.0_all.deb
+2  sudo apt-get update
+3  sudo apt-get install elixir
+
+Install Phoenix
+
+5  mix local.hex
+6  mix archive.install https://github.com/phoenixframework/phoenix/releases/download/v1.0.3/phoenix_new-1.0.3.ez
+
+Linux-only filesystem watcher that Phoenix uses for live code reloading
+
+7  sudo apt-get install inotify-tools
+
+Install Postgres
+
+9  sudo apt-get install postgresql
+
+10 Install npm and node as below
+
 ================================= mean stack
+
+
 
 
 install nodejs | install npm | install node
