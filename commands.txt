@@ -453,7 +453,7 @@ git fetch origin
 git reset --hard origin/dev
 
 ========== revert commit undo commit
-
+https://github.com/blog/2019-how-to-undo-almost-anything-with-git
 Undo a commit and redo
 
 $ git commit -m "Something terribly misguided"              (1)
